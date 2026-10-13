@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+/* Reusable button components */
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition;
+    }
+    .btn-secondary {
+        @apply inline-flex items-center justify-center rounded-lg bg-slate-200 px-5 py-3 font-semibold text-slate-800 transition;
+    }
+    .btn-outline {
+        @apply inline-flex items-center justify-center rounded-lg border border-blue-600 px-5 py-3 font-semibold text-blue-600 transition;
+    }
+    /* Reusable card component */
+    .card {
+        @apply overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition;
+    }
+    /* Reusable alert component */
+    .alert {
+        @apply flex items-start gap-3 rounded-xl border p-4;
+    }
+}
+
+
+/* Card hover effect */
+
+@media (hover: hover) {
+    .card:hover {
+        @apply -translate-y-1 shadow-lg;
+    }
+}
