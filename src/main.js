@@ -3,22 +3,28 @@ import './style.css';
 document.querySelector('#app').innerHTML = `
   <main class="min-h-screen bg-slate-100 px-6 py-12 text-slate-800">
     <div class="mx-auto max-w-5xl">
+
+      <!-- Page Header -->
       <header class="mb-10">
         <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-blue-600">
           Week 3 · Workshop 2
         </p>
+
         <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
           Tailwind Component Library
         </h1>
+
         <p class="mt-3 max-w-2xl text-slate-600">
           Reusable UI components built with Tailwind CSS utilities.
         </p>
       </header>
 
+      <!-- Buttons Section -->
       <section class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
         <h2 class="text-xl font-bold">Buttons</h2>
+
         <p class="mt-2 text-sm text-slate-500">
-          Primary, secondary and outline variants.
+          Primary, secondary and outline variants with interactive states.
         </p>
 
         <div class="mt-6 flex flex-wrap items-center gap-4">
@@ -40,11 +46,11 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
 
-      
       <!-- Cards Section -->
-      <section class="mt-8">
+      <section class="mt-10">
         <div class="mb-5">
           <h2 class="text-2xl font-bold">Cards</h2>
+
           <p class="mt-2 text-slate-600">
             Reusable cards for profiles and products.
           </p>
@@ -59,6 +65,7 @@ document.querySelector('#app').innerHTML = `
                 <div class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-white/50 bg-white/20 text-2xl font-bold">
                   N
                 </div>
+
                 <div>
                   <h3 class="text-xl font-bold">Neema Zaninka</h3>
                   <p class="text-sm text-blue-100">Software Developer</p>
@@ -72,8 +79,13 @@ document.querySelector('#app').innerHTML = `
               </p>
 
               <div class="mt-4 flex flex-wrap gap-2">
-                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">JavaScript</span>
-                <span class="rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-700">Tailwind CSS</span>
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+                  JavaScript
+                </span>
+
+                <span class="rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-700">
+                  Tailwind CSS
+                </span>
               </div>
 
               <button class="mt-6 w-full rounded-lg bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-slate-700 focus:outline-2 focus:outline-offset-2 focus:outline-slate-900">
@@ -97,17 +109,26 @@ document.querySelector('#app').innerHTML = `
 
             <div class="p-6">
               <div class="flex items-center justify-between gap-3">
-                <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">IN STOCK</span>
-                <span class="text-sm text-amber-500">★★★★★</span>
+                <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">
+                  IN STOCK
+                </span>
+
+                <span class="text-sm text-amber-500" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </span>
               </div>
 
               <h3 class="mt-4 text-xl font-bold">Developer Laptop</h3>
+
               <p class="mt-2 leading-7 text-slate-600">
                 A reliable laptop for coding, web development and everyday productivity.
               </p>
 
               <div class="mt-5 flex items-center justify-between gap-3">
-                <span class="text-2xl font-extrabold text-slate-900">$899</span>
+                <span class="text-2xl font-extrabold text-slate-900">
+                  $899
+                </span>
+
                 <button class="rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-600">
                   View Product
                 </button>
@@ -117,6 +138,82 @@ document.querySelector('#app').innerHTML = `
 
         </div>
       </section>
+
+      <!-- Alerts Section -->
+      <section class="mt-10">
+        <div class="mb-5">
+          <h2 class="text-2xl font-bold">Alerts</h2>
+
+          <p class="mt-2 text-slate-600">
+            Clear feedback messages for different situations.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+
+          <!-- Success Alert -->
+          <div role="alert" class="flex items-start gap-3 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-emerald-800">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-100 font-bold">
+              ✓
+            </span>
+
+            <div>
+              <h3 class="font-bold">Success!</h3>
+              <p class="mt-1 text-sm">
+                Your changes have been saved successfully.
+              </p>
+            </div>
+          </div>
+
+          <!-- Warning Alert -->
+          <div role="alert" class="flex items-start gap-3 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-900">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-amber-100 font-bold">
+              !
+            </span>
+
+            <div>
+              <h3 class="font-bold">Warning</h3>
+              <p class="mt-1 text-sm">
+                Please review your information before continuing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Error Alert -->
+          <div role="alert" class="flex items-start gap-3 rounded-xl border border-red-200 bg-red-50 p-4 text-red-800">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-100 font-bold">
+              ×
+            </span>
+
+            <div>
+              <h3 class="font-bold">Error occurred</h3>
+              <p class="mt-1 text-sm">
+                Something went wrong. Please try again.
+              </p>
+            </div>
+          </div>
+
+          <!-- Info Alert -->
+          <div role="status" class="flex items-start gap-3 rounded-xl border border-sky-200 bg-sky-50 p-4 text-sky-800">
+            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-100 font-bold">
+              i
+            </span>
+
+            <div>
+              <h3 class="font-bold">Information</h3>
+              <p class="mt-1 text-sm">
+                A new update is available for your dashboard.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-10 border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+        Tailwind Component Library · Week 3 Workshop 2
+      </footer>
 
     </div>
   </main>
