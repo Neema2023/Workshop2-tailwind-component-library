@@ -39,6 +39,85 @@ document.querySelector('#app').innerHTML = `
           </button>
         </div>
       </section>
+
+      
+      <!-- Cards Section -->
+      <section class="mt-8">
+        <div class="mb-5">
+          <h2 class="text-2xl font-bold">Cards</h2>
+          <p class="mt-2 text-slate-600">
+            Reusable cards for profiles and products.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+          <!-- Profile Card -->
+          <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white">
+              <div class="flex items-center gap-4">
+                <div class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-white/50 bg-white/20 text-2xl font-bold">
+                  N
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Neema Zaninka</h3>
+                  <p class="text-sm text-blue-100">Software Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <p class="leading-7 text-slate-600">
+                Passionate about building modern web applications and creating useful digital experiences.
+              </p>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">JavaScript</span>
+                <span class="rounded-full bg-indigo-100 px-3 py-1 text-sm font-medium text-indigo-700">Tailwind CSS</span>
+              </div>
+
+              <button class="mt-6 w-full rounded-lg bg-slate-900 px-4 py-3 font-semibold text-white transition hover:bg-slate-700 focus:outline-2 focus:outline-offset-2 focus:outline-slate-900">
+                View Profile
+              </button>
+            </div>
+          </article>
+
+          <!-- Product Card -->
+          <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-violet-100 via-blue-100 to-cyan-100">
+              <svg viewBox="0 0 120 120" class="h-28 w-28" fill="none" aria-label="Laptop illustration" role="img">
+                <rect x="25" y="20" width="70" height="53" rx="5" fill="#334155"/>
+                <rect x="31" y="26" width="58" height="41" rx="2" fill="#93C5FD"/>
+                <path d="M16 79H104L96 91H24L16 79Z" fill="#64748B"/>
+                <rect x="48" y="81" width="24" height="3" rx="1.5" fill="#CBD5E1"/>
+                <circle cx="60" cy="46" r="9" fill="#2563EB"/>
+                <path d="M55 46L59 50L66 42" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center justify-between gap-3">
+                <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">IN STOCK</span>
+                <span class="text-sm text-amber-500">★★★★★</span>
+              </div>
+
+              <h3 class="mt-4 text-xl font-bold">Developer Laptop</h3>
+              <p class="mt-2 leading-7 text-slate-600">
+                A reliable laptop for coding, web development and everyday productivity.
+              </p>
+
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <span class="text-2xl font-extrabold text-slate-900">$899</span>
+                <button class="rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white transition hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-600">
+                  View Product
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
     </div>
   </main>
 `;
