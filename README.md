@@ -22,7 +22,7 @@ A reusable UI component library built with Tailwind CSS and Vite.
 ## Group Members
 
 ZANINKA Neema
-
+UWASE belise
 ## Design Trade-off
 
 We chose reusable component classes to reduce repeated styling and make the design easier to maintain. This improves consistency, although creating reusable classes requires an initial setup step.
