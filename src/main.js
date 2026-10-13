@@ -62,9 +62,11 @@ document.querySelector('#app').innerHTML = `
           <article class="card">
             <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 text-white">
               <div class="flex items-center gap-4">
-                <div class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-white/50 bg-white/20 text-2xl font-bold">
-                  N
-                </div>
+              <img
+  src="/profile.jpg"
+  alt="Neema Zaninka"
+  class="h-16 w-16 rounded-full border-2 border-white/50 object-cover"
+/>
                 <div>
                   <h3 class="text-xl font-bold">Neema Zaninka</h3>
                   <p class="text-sm text-blue-100">Software Developer</p>
